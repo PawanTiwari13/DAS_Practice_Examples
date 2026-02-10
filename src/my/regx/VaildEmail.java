@@ -21,13 +21,13 @@ public class VaildEmail {
 //  String sa="Pawan";
   
         MyRegex r=new MyRegex();
-        Scanner sc=new Scanner(System.in);
-        while (sc.hasNext()) {
-        String s=sc.next();
+        try (Scanner sc = new Scanner(System.in)) {
+            while (sc.hasNext()) {
+                String s=sc.next();
 //          sa.charAt(0)
-            System.out.println(s.matches(r.pattern));
+System.out.println(s.matches(r.pattern));
+            }
         }
-        sc.close();
     }
     
 }

@@ -31,8 +31,10 @@ public class RemoveDuplicateElement {
                 arr[i] = arr[j];
             }
         }
-
+        
+        
         return i + 1; // new length
+        
     }
 
     public static void main(String[] args) {
@@ -40,9 +42,10 @@ public class RemoveDuplicateElement {
 
         int arr[] = {9, 5, 1, 7, 3, 8, 2, 5, 4, 10, 6};
 
-        duplicate.sort(arr);
+//        duplicate.sort(arr);
 
         int newLength = duplicate.removeDuplicate(arr);
+        
         System.out.println(" ");  
         System.out.println("Array after sorting and removing duplicates:");
         for (int k = 0; k < newLength; k++) {
