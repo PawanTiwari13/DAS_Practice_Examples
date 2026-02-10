@@ -12,9 +12,9 @@ Problems are divided into **Easy / Medium / Hard** and categorized into **Tier 1
 ### Easy
 - [x] Find largest element in array
 - [x] Second largest element
-- [ ] Check if array is sorted *(Implementing)*
-- [ ] Remove duplicates from sorted array
-- [ ] Rotate array by k
+- [x] Check if array is sorted *(Implementing)*
+- [x] Remove duplicates from sorted array
+- [x] Rotate array by k
 - [ ] Move all zeros to end
 - [ ] Missing number (1 to N)
 - [ ] Find duplicate number

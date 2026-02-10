@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class RotateArray {
 
     public void reverse(int[] arr, int start, int end) {
-        while(start < end) {
+        while (start < end) {
             int temp = arr[start];
             arr[start] = arr[end];
             arr[end] = temp;
@@ -16,28 +16,25 @@ public class RotateArray {
 
     public void rotateByK(int[] arr, int k) {
         int n = arr.length;
-        k = k % n;  // handle if k > n
+        k = k % n;
 
-        // Step 1: Reverse whole array
         reverse(arr, 0, n - 1);
 
-        // Step 2: Reverse first k elements
         reverse(arr, 0, k - 1);
 
-        // Step 3: Reverse remaining elements
         reverse(arr, k, n - 1);
     }
 
     public static void main(String[] args) {
         RotateArray obj = new RotateArray();
-         Scanner sc=new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         int[] arr = {5, 2, 4, 6, 3, 7, 1, 9, 8, 10};
         System.out.println("Enter the K'th element to rotate");
         int k = sc.nextInt();
 
         obj.rotateByK(arr, k);
 
-        for(int num : arr) {
+        for (int num : arr) {
             System.out.print(num + " ");
         }
     }
