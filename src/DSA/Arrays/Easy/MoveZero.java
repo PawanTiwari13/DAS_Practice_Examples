@@ -1,4 +1,4 @@
-package DSA.Arrays;
+package DSA.Arrays.Easy;
 
 public class MoveZero {
 
