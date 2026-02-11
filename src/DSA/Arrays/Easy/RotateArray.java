@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class RotateArray {
 
-    public void reverse(int[] arr, int start, int end) {
+    public static void reverse(int[] arr, int start, int end) {
         while (start < end) {
             int temp = arr[start];
             arr[start] = arr[end];
@@ -12,6 +12,20 @@ public class RotateArray {
             start++;
             end--;
         }
+    }
+// ye Optimize code hai jaha 
+    public static void rotateByKOpt(int arr[], int k) {
+        int n = arr.length;
+        if (n == 0) {
+            return;
+        }
+        k = k % n;
+        if (k < 0) {
+            k = k + n;
+        }
+        reverse(arr, 0, n - 1);
+        reverse(arr, 0, k - 1);
+        reverse(arr, k, n - 1);
     }
 
     public void rotateByK(int[] arr, int k) {
@@ -26,14 +40,12 @@ public class RotateArray {
     }
 
     public static void main(String[] args) {
-        RotateArray obj = new RotateArray();
         Scanner sc = new Scanner(System.in);
         int[] arr = {5, 2, 4, 6, 3, 7, 1, 9, 8, 10};
         System.out.println("Enter the K'th element to rotate");
         int k = sc.nextInt();
-
-        obj.rotateByK(arr, k);
-
+        rotateByKOpt(arr, k);
+        
         for (int num : arr) {
             System.out.print(num + " ");
         }

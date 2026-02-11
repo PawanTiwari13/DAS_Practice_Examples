@@ -15,9 +15,9 @@ Problems are divided into **Easy / Medium / Hard** and categorized into **Tier 1
 - [x] Check if array is sorted *(Implementing)*
 - [x] Remove duplicates from sorted array
 - [x] Rotate array by k
-- [ ] Move all zeros to end
+- [x] Move all zeros to end
 - [ ] Missing number (1 to N)
-- [ ] Find duplicate number
+- [x] Find duplicate number
 - [ ] Union of two arrays
 - [ ] Intersection of two arrays
 
