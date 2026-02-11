@@ -1,6 +1,5 @@
 package DSA.Arrays.Easy;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class FindDuplicate {
@@ -11,13 +10,12 @@ public class FindDuplicate {
         for (int i = 0; i < arr.length - 1; i++) {
             if (arr[i] == arr[i + 1]) {
                 System.out.print(" " + arr[i] + " ");
-                // skip all same duplicates
                 while (i < arr.length - 1 && arr[i] == arr[i + 1]) {
                     i++;
                 }
             }
         }
-
+        System.out.println("");
     }
 
     public static void main(String[] args) {
