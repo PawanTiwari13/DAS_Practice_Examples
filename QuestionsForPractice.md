@@ -22,8 +22,8 @@ Problems are divided into **Easy / Medium / Hard** and categorized into **Tier 1
 - [ ] Intersection of two arrays
 
 ### Medium
-- [ ] Kadane’s Algorithm (Maximum subarray sum)
-- [ ] Subarray sum equals K
+- [x] Kadane’s Algorithm (Maximum subarray sum)
+- [x] Subarray sum equals K
 - [ ] Longest subarray with sum K
 - [ ] Sort 0s, 1s, 2s (Dutch National Flag)
 - [ ] Next permutation
