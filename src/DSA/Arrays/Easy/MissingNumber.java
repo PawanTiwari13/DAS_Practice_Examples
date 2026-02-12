@@ -1,13 +1,22 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package DSA.Arrays.Easy;
 
-/**
- *
- * @author pt349
- */
 public class MissingNumber {
-    
+
+    public static int findMissing(int[] arr, int n) {
+        int expectedSum = n * (n + 1) / 2;
+        int actualSum = 0;
+
+        for (int num : arr) {
+            actualSum += num;
+        }
+
+        return expectedSum - actualSum;
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 4, 5, 6}; // missing 3
+        int n = 6;
+
+        System.out.println(findMissing(arr, n));
+    }
 }

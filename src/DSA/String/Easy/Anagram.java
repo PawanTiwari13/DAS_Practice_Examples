@@ -39,9 +39,8 @@ public class Anagram {
     }
 
     public static void main(String[] args) {
-        String str1 = "dfdfdf";
-        String str2 = "abcd";
-
+        String str1 = "care";
+        String str2 = "reac";
         if (isAnagram(str1, str2)) {
             System.out.print("The two strings are " + "anagram of each other ");
         } else {
