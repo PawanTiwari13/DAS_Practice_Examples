@@ -50,14 +50,14 @@ Problems are divided into **Easy / Medium / Hard** and categorized into **Tier 1
 ## 📍 2. Strings (Must Do)
 
 ### Easy
-- [ ] Reverse a string
-- [ ] Check palindrome
-- [ ] Check anagram
-- [ ] Count vowels/consonants
+- [x] Reverse a string
+- [x] Check palindrome
+- [x] Check anagram
+- [x] Count vowels/consonants
 - [ ] Remove all spaces
-- [ ] Reverse words in string
-- [ ] Find first non-repeating character
-- [ ] Check if string is rotation of another
+- [x] Reverse words in string
+- [x] Find first non-repeating character
+- [x] Check if string is rotation of another
 
 ### Medium
 - [ ] Longest substring without repeating characters
