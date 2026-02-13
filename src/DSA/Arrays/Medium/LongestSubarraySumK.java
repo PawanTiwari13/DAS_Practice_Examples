@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package DSA.Arrays.Medium;
 
 import java.util.HashMap;
@@ -14,21 +10,21 @@ public class LongestSubarraySumK {
         int sum = 0;
         int maxLen = 0;
 
-        for(int i = 0; i < arr.length; i++) {
+        for (int i = 0; i < arr.length; i++) {
             sum += arr[i];
 
             // If sum itself equals k
-            if(sum == k) {
+            if (sum == k) {
                 maxLen = i + 1;
             }
 
             // If (sum - k) exists, then subarray sum = k
-            if(map.containsKey(sum - k)) {
+            if (map.containsKey(sum - k)) {
                 maxLen = Math.max(maxLen, i - map.get(sum - k));
             }
 
             // Store first occurrence of sum
-            if(!map.containsKey(sum)) {
+            if (!map.containsKey(sum)) {
                 map.put(sum, i);
             }
         }

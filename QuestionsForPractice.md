@@ -16,7 +16,7 @@ Problems are divided into **Easy / Medium / Hard** and categorized into **Tier 1
 - [x] Remove duplicates from sorted array
 - [x] Rotate array by k
 - [x] Move all zeros to end
-- [ ] Missing number (1 to N)
+- [x] Missing number (1 to N)
 - [x] Find duplicate number
 - [ ] Union of two arrays
 - [ ] Intersection of two arrays
@@ -27,13 +27,13 @@ Problems are divided into **Easy / Medium / Hard** and categorized into **Tier 1
 - [ ] Longest subarray with sum K
 - [ ] Sort 0s, 1s, 2s (Dutch National Flag)
 - [ ] Next permutation
-- [ ] Merge two sorted arrays without extra space
+- [x] Merge two sorted arrays without extra space
 - [ ] Majority element (n/2)
 - [ ] Majority element (n/3)
 - [ ] Best time to buy/sell stock (I)
 - [ ] Best time to buy/sell stock (II)
 - [ ] Rearrange array alternatively (+/-)
-- [ ] Maximum product subarray
+- [x] Maximum product subarray
 - [ ] Find leaders in array
 - [ ] Maximum sum of k consecutive elements
 - [ ] Find equilibrium index
